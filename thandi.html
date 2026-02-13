@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>For Thandi ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #ff758c, #ff7eb3);
+        font-family: Arial, sans-serif;
+        color: white;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+        opacity: 0.9;
+      }
+
+      .instruction {
+        position: absolute;
+        bottom: 130px;
+        left: 40px;
+        font-size: 1rem;
+        opacity: 0.9;
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          opacity: 0.6;
+          transform: translateY(0);
+        }
+        50% {
+          opacity: 1;
+          transform: translateY(-5px);
+        }
+        100% {
+          opacity: 0.6;
+          transform: translateY(0);
+        }
+      }
+
+      elevenlabs-convai {
+        width: 350px;
+        max-width: 90%;
+      }
+
+      .arrow {
+        position: absolute;
+        bottom: 100px;
+        left: 70px;
+        font-size: 1.5rem;
+        animation: bounce 1.5s infinite;
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-8px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Hello My Love ❤️</h1>
+      <p>I made something for you...</p>
+      <p><strong>Call me.</strong></p>
+    </div>
+
+    <div class="instruction">Tap “Start a call” below 👇</div>
+
+    <div class="arrow">⬇️</div>
+
+    <elevenlabs-convai
+      agent-id="agent_1501khbyp5kqf5fs95xt3hmnyc6d"
+    ></elevenlabs-convai>
+    <script
+      src="https://unpkg.com/@elevenlabs/convai-widget-embed"
+      async
+    ></script>
+  </body>
+</html>
